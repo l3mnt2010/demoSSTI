@@ -1,0 +1,23 @@
+version: '3'
+services:
+  index:
+    build: ./index/
+    ports:
+     - "${IP}:4000:4000"
+  go:
+    build: ./go/goTemplate/
+  java:
+    build: ./java/springBased/
+  python-flask-based:
+    build: ./python/flaskBasedTests/
+  python-tornado:
+    build: ./python/python-Tornado/
+  python-django:
+    build: ./python/python-django/
+  javascript:
+    build: ./javascript/
+  php:
+    build: ./php/
+  ruby:
+    build: ./ruby/
+
